@@ -3,9 +3,9 @@ import { useParams } from "react-router-dom";
 import Card from "./Card";
 
 function ProductDetails() {
-  const api_url = "http://fakestoreapi.com/products";
-  const params = useParams();
+  const api_url = "https://fakestoreapi.com/products";
   const [product, setProduct] = useState({});
+  const params = useParams();
 
   useEffect(() => {
     fetch(`${api_url}/${params.productId}`)
