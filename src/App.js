@@ -4,6 +4,7 @@ import ProductsList from "./components/ProductsList";
 import Slider from "./components/Slider";
 import { Routes, Route } from "react-router";
 import About from "./components/About";
+import ProductDetails from "./components/ProductDetails";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           }
         ></Route>
         <Route path="about" element={<About />}></Route>
+        <Route path="product/:productId" element={<ProductDetails />}></Route>
       </Routes>
     </div>
   );
